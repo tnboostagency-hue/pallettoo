@@ -1,0 +1,6 @@
+.npm-cache
+.tools
+source-site
+scripts
+wordpress-backup
+*.log
