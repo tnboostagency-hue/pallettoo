@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "../globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/site";
+import { ScrollAnimator } from "@/components/scroll-animator";
 import { Locale, copy } from "@/lib/content";
 import assets from "@/lib/assets.json";
 const jost = localFont({
@@ -51,6 +52,7 @@ export default async function Layout({
         <Header lang={lang as Locale} />
         <main id="main">{children}</main>
         <Footer lang={lang} />
+        <ScrollAnimator />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
